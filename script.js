@@ -92,7 +92,7 @@ const PROJECTS = [
 ];
 
 // Where the contact form sends messages (opens the visitor's email app).
-const CONTACT_EMAIL = "hello@example.com";
+const CONTACT_EMAIL = "fabiankubo@gmail.com";
 // ────────────────────────────────────────────────────────────────────────────
 
 const LANGS = ["en", "sk"];
