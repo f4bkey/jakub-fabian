@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakub Fabian — CRM Integration &amp; Automation</title>
+  <meta name="description" content="Jakub Fabian — Bloomreach certified. CRM integration and process automation with Bloomreach, Klaviyo, Ecomail, Mailchimp, Make and Zapier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Text in elements with data-i18n comes from i18n.js (EN + SK). The English
+       text below is only the fallback, so edit translations in i18n.js. -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Jakub Fabian">JF<span class="logo-mark" aria-hidden="true"></span></a>
+      <div class="nav-right">
+        <nav>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Contact me</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="sk" aria-pressed="false">SK</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ABOUT -->
+    <section id="about" class="hero container">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Hi, I'm</p>
+      <h1>Jakub Fabian</h1>
+      <p class="lead" data-i18n="hero.lead">
+        CRM integration &amp; automation specialist. I help companies connect their
+        CRM and marketing platforms and automate repetitive work, from simple
+        workflows to complex integrations.
+      </p>
+      <p class="badge" data-i18n="hero.badge">✓ Certified Bloomreach specialist</p>
+      <div class="about-grid">
+        <div>
+          <p data-i18n="about.p1">
+            I've worked on CRM and marketing platform projects for brands such as
+            Dedoles, eyerim, Travelking, Powerlogy, ČSOB Leasing, 365.bank and BILLA
+            Slovakia. For ČSOB Leasing, Powerlogy and Dedoles I did the full
+            integration from scratch.
+          </p>
+          <p data-i18n="about.p2">
+            Now I'm open to new projects. I can help integrate a CRM platform or
+            automate the manual, repetitive tasks your team does every day, whether
+            they're basic or more complicated.
+          </p>
+          <div class="services">
+            <div class="service">
+              <h3 data-i18n="service.crm.title">CRM integration</h3>
+              <p data-i18n="service.crm.text">Setting up and connecting platforms like Bloomreach, Klaviyo, Ecomail or Mailchimp to your website and data.</p>
+            </div>
+            <div class="service">
+              <h3 data-i18n="service.auto.title">Process automation</h3>
+              <p data-i18n="service.auto.text">Automating repetitive work with Make, Zapier, custom scripts and Claude Code.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-groups">
+          <div>
+            <h4 data-i18n="skills.crm">CRM &amp; email</h4>
+            <ul class="skills">
+              <li>Bloomreach</li>
+              <li>Klaviyo</li>
+              <li>Ecomail</li>
+              <li>Mailchimp</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="skills.auto">Automation</h4>
+            <ul class="skills">
+              <li>Make</li>
+              <li>Zapier</li>
+              <li>Claude Code</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="skills.code">Code &amp; web</h4>
+            <ul class="skills">
+              <li>SQL</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary" data-i18n="cta.work">See my work</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="cta.contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <h2 data-i18n="projects.title">Past projects</h2>
+      <p class="section-sub" data-i18n="projects.sub">Brands I've worked with on CRM, integration and automation.</p>
+      <div class="filters" id="filters"></div>
+      <div class="project-grid" id="project-grid">
+        <!-- Filled from the PROJECTS list in script.js -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section contact">
+      <h2 data-i18n="contact.title">Let's work together</h2>
+      <p class="section-sub" data-i18n="contact.sub">Need a CRM integrated or repetitive work automated? Send me a message and I'll get back to you.</p>
+      <form class="contact-form" id="contact-form">
+        <label><span data-i18n="form.name">Name</span> <input type="text" name="name" required></label>
+        <label><span data-i18n="form.email">Email</span> <input type="email" name="email" required></label>
+        <label class="full"><span data-i18n="form.message">Message</span> <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn btn-primary full" data-i18n="form.send">Send message</button>
+      </form>
+      <div class="contact-links">
+        <!-- EDIT: your links -->
+        <a href="mailto:hello@example.com" id="email-link">hello@example.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Jakub Fabian</div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
